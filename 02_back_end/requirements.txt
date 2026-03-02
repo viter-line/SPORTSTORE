@@ -1,0 +1,7 @@
+Додайте Flask-Migrate до списку залежностей.
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-JWT-Extended
+Werkzeug
+mysql-connector-python
