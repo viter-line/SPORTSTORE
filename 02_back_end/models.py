@@ -21,6 +21,16 @@ class Product(db.Model):
     category = db.Column(db.String(50), nullable=False)
     price = db.Column(db.Float, nullable=False)
 
+    def to_dict(self):
+        """Перетворення об'єкта в словник для JSON відповіді [11, 12]."""
+        return {
+            "id": self.id,
+            "name": self.name,
+            "category": self.category,
+            "price": self.price,
+            "description": self.description
+        }
+
 class Cart(db.Model):
     """Кошик користувача."""
     __tablename__ = 'carts'

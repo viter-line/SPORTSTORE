@@ -13,7 +13,7 @@ def create_app():
     app = Flask(__name__)
 
     # Конфігурація MySQL (замініть на власні дані)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:usbw@localhost:3306/sport_store'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:usbw@localhost:3306/products'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['JWT_SECRET_KEY'] = 'sport-store-secure-key'
 
