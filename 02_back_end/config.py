@@ -5,7 +5,7 @@ class Config:
     DB_CONFIG = {
         'host': "localhost",
         'port': '3306',
-        'database': 'market',
+        'database': 'products',
         'user': 'root',
         'password': 'usbw'
     }
